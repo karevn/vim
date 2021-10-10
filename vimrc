@@ -5,6 +5,7 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugins')
 
+Plug 'https://github.com/tpope/vim-sensible.git'
 Plug 'https://github.com/kaicataldo/material.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'preservim/nerdcommenter'
@@ -16,6 +17,7 @@ Plug 'https://github.com/ryanoasis/vim-devicons.git'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
