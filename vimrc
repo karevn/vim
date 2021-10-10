@@ -12,12 +12,23 @@ Plug 'https://github.com/neoclide/coc.nvim.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/ryanoasis/vim-devicons.git'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
 call plug#end()
 
+" COC
+let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-pairs']
+
 colorscheme material
 let g:material_theme_style = 'palenight'
+if (has("termguicolors"))
+  set termguicolors
+endif
 set background=dark
+
 " Required:
 filetype plugin indent on
 syntax enable
@@ -36,11 +47,3 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
   autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
 augroup END
-
-if (has("termguicolors"))
-  set termguicolors
-endif
-
-" COC
-let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-pairs']
-
