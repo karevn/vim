@@ -1,3 +1,4 @@
+set noswapfile
 
 
 " Specify a directory for plugins
@@ -20,6 +21,9 @@ Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 Plug 'plasticboy/vim-markdown'
 
 call plug#end()
+
+set foldmethod=indent
+set foldnestmax=2
 
 " COC
 let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-pairs']
