@@ -22,12 +22,14 @@ Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
+" Folding
 set foldmethod=indent
 set foldnestmax=2
 
 " COC
 let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-pairs']
 
+" Color scheme
 colorscheme material
 let g:material_theme_style = 'palenight'
 if (has("termguicolors"))
@@ -39,14 +41,29 @@ set background=dark
 filetype plugin indent on
 syntax enable
 
-" If you want to install not installed plugins on startup.
-"if dein#check_install()
-"  call dein#install()
-"endif
+set autoindent
+set smartindent
+set cindent
 
-"End dein Scripts-------------------------
+set expandtab
+set smarttab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set wildignore=*.pyc
 
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+set shiftround
 
+set history=1000
+set undolevels=1000
+set nobackup
+
+" Line numbers
+set linespace=3
 set number relativenumber
 augroup numbertoggle
   autocmd!
