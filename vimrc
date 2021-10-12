@@ -230,6 +230,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 
-map <C-p> :FZF<CR>
+map <C-p> :GFiles<CR>
 map <C-f> :Rg<CR>
-
+map <s-tab> :Buffers<CR>
