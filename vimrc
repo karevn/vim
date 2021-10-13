@@ -233,3 +233,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 map <C-p> :GFiles<CR>
 map <C-f> :Rg<CR>
 map <s-tab> :Buffers<CR>
+set title
+set showtabline=2
+
