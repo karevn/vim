@@ -1,5 +1,8 @@
 {
   "eslint.alwaysShowStatus": true,
   "eslint.autoFixOnSave": true,
-  "eslint.format.enable": true
+  "eslint.format.enable": true,
+  "rust-analyzer.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": ["rust"]
+
 }
