@@ -1,5 +1,5 @@
 set noswapfile
-
+set shell=bash
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -11,7 +11,7 @@ Plug 'https://github.com/kaicataldo/material.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'preservim/nerdcommenter'
 Plug 'https://github.com/neoclide/coc.nvim.git'
-Plug 'https://github.com/tpope/vim-fugitive.git'
+"Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/ryanoasis/vim-devicons.git'
@@ -64,12 +64,7 @@ set nobackup
 
 " Line numbers
 set linespace=3
-set number relativenumber
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
-  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
-augroup END
+set number
 
 
 "COC
